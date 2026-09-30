@@ -1,0 +1,4 @@
+"0","gbm_preds = predict(gbm_model, newdata = test_set_processed)"
+"0",""
+"0","# Izračunavanje metrika za GBM"
+"0","gbm_m = calc_metrics(y_test, gbm_preds)"

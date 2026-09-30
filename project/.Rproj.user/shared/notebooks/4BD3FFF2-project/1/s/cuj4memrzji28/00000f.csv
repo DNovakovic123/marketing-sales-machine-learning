@@ -1,0 +1,6 @@
+"0","baseline_mae = mean(abs(actuals - baseline_preds))"
+"0","print(paste(""Baseline MAE:"", round(baseline_mae, 4)))"
+"1","[1]"
+"1"," ""Baseline MAE: 0.554"""
+"1","
+"

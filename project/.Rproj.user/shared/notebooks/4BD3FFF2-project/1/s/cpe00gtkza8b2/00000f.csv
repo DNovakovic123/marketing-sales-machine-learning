@@ -1,0 +1,7 @@
+"0","feature_selection_summary = data.frame("
+"0","  Feature = names(gvif_column),"
+"0","  VIF = round(gvif_column, 2),"
+"0","  Status = ifelse(gvif_column > 9, ""Eliminisano / Redundantno"", ""Zadržano"")"
+"0",")"
+"0",""
+"0","print(feature_selection_summary)"

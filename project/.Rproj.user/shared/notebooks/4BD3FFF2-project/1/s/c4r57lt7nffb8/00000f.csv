@@ -1,0 +1,1 @@
+"0","dataset_clean$days_since_start = as.numeric(dataset_clean$date - min(dataset_clean$date, na.rm = TRUE))"

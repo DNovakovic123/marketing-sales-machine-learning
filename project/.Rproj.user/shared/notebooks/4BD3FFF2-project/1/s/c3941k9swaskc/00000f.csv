@@ -1,0 +1,6 @@
+"0","cv_summary_table = data.frame("
+"0","  Parametar = c(""Metod validacije"", ""Broj foldova (K)"", ""Evaluacione metrike"", ""Praćenje rezultata"", ""Čuvanje predikcija""),"
+"0","  Vrednost = c(""Cross-Validation (cv)"", ""5"", ""RMSE, MAE, R-squared"", ""Mean i Standardna devijacija (SD)"", ""final"")"
+"0",")"
+"0",""
+"0","knitr::kable(cv_summary_table, caption = ""Konfigurisani parametri i metrike unakrsne validacije"")"

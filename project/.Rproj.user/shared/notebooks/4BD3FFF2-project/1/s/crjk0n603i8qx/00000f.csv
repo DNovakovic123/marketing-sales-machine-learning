@@ -1,0 +1,8 @@
+"0","ggplot(dataset_clean, aes(x = marketing_budget_usd)) +"
+"0","  geom_histogram(bins = 30, fill = ""#3498DB"", color = ""#2C3E50"", alpha = 0.8) +"
+"0","  theme_minimal() +"
+"0","  labs(title = ""Histogram: Marketing Budžet"", "
+"0","       x = ""Marketing Budžet (USD)"", "
+"0","       y = ""Frekvencija"") +"
+"0","  theme(plot.title = element_text(hjust = 0.5, face = ""bold""))"
+"0",""

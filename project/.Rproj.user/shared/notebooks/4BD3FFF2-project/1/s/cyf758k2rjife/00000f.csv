@@ -1,0 +1,5 @@
+"0","for(col in categorical_features) {"
+"0","  train_set[[col]] = as.factor(train_set[[col]])"
+"0","  test_set[[col]]  = factor(test_set[[col]], levels = levels(train_set[[col]]))"
+"0","}"
+"0",""
