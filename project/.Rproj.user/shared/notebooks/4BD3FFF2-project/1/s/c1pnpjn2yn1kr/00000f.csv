@@ -1,0 +1,5 @@
+"0","dataset_clean$purchase_frequency =ifelse("
+"0","  (dataset_clean$days_since_start - dataset_clean$days_since_last_purchase) > 0,"
+"0","  dataset_clean$num_previous_purchases / (dataset_clean$days_since_start - dataset_clean$days_since_last_purchase),"
+"0","  dataset_clean$num_previous_purchases"
+"0",")"

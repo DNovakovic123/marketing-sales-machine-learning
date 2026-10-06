@@ -1,0 +1,7 @@
+"0","res_df[, ""Abs_Residuals""] = abs(res_df[, ""Residuals""])"
+"0","extreme_errors = res_df[order(-res_df[, ""Abs_Residuals""]), ]"
+"0",""
+"0","knitr::kable("
+"0","  head(extreme_errors[, c(""Actual"", ""Predicted"", ""Residuals"", ""Abs_Residuals"")], 5), "
+"0","  caption = ""Top 5 opservacija sa najvećom greškom predviđanja na test setu"""
+"0",")"

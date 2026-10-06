@@ -1,0 +1,8 @@
+"0","ggplot(dataset_clean, aes(x = product_category, fill = product_category)) +"
+"0","  geom_bar(alpha = 0.8, show.legend = TRUE) +"
+"0","  theme_minimal() +"
+"0","  labs(title = ""Bar plot: Kategorije proizvoda"", "
+"0","       x = ""Kategorija proizvoda"", "
+"0","       y = ""Broj transakcija"") +"
+"0","  theme(plot.title = element_text(hjust = 0.5, face = ""bold""),"
+"0","        axis.text.x = element_text(angle = 30, hjust = 1))"

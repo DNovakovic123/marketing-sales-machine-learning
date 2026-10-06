@@ -1,0 +1,7 @@
+"0","ggplot(dataset_clean, aes(x = website_traffic)) +"
+"0","  geom_histogram(bins = 30, fill = ""#E67E22"", color = ""#2C3E50"", alpha = 0.8) +"
+"0","  theme_minimal() +"
+"0","  labs(title = ""Histogram: Posete sajtu"", "
+"0","       x = ""Website Traffic"", "
+"0","       y = ""Frekvencija"") +"
+"0","  theme(plot.title = element_text(hjust = 0.5, face = ""bold""))"

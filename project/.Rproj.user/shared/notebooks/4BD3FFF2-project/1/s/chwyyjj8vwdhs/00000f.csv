@@ -1,0 +1,7 @@
+"0","# 3. Prihod po mesecima (korišćenje postojeće kolone 'month')"
+"0","revenue_by_month = dataset_clean %>%"
+"0","  group_by(month) %>%"
+"0","  summarise(total_revenue = sum(sales_revenue_usd, na.rm = TRUE),"
+"0","            mean_revenue = mean(sales_revenue_usd, na.rm = TRUE))"
+"0",""
+"0","print(revenue_by_month)"

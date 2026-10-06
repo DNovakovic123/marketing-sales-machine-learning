@@ -1,0 +1,6 @@
+"0","mean_bias = mean(test_residuals)"
+"0","print(paste(""Prosečna greška (Bias) na test setu:"", round(mean_bias, 6)))"
+"1","[1]"
+"1"," ""Prosečna greška (Bias) na test setu: -0.009028"""
+"1","
+"

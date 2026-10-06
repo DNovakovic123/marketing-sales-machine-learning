@@ -1,0 +1,7 @@
+"0","# 2. Prihod po kvartalima (korišćenje postojeće kolone 'quarter')"
+"0","revenue_by_quarter = dataset_clean %>%"
+"0","  group_by(quarter) %>%"
+"0","  summarise(total_revenue = sum(sales_revenue_usd, na.rm = TRUE),"
+"0","            mean_revenue = mean(sales_revenue_usd, na.rm = TRUE))"
+"0",""
+"0","print(revenue_by_quarter)"
