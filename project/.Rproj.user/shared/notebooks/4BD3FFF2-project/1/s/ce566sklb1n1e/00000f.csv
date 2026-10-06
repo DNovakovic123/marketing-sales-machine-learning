@@ -1,1 +1,0 @@
-"0","dataset_clean$channel_segment = as.factor(paste(dataset_clean$sales_channel, dataset_clean$customer_segment, sep = ""_""))"

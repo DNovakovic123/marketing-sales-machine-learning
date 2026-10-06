@@ -1,5 +1,0 @@
-"0","x_train = model.matrix(log_revenue ~ . - sales_revenue_usd, data = train_set_processed)[, -1]"
-"0","y_train = train_set_processed$log_revenue"
-"0",""
-"0","x_test  = model.matrix(log_revenue ~ . - sales_revenue_usd, data = test_set_processed)[, -1]"
-"0","y_test  = test_set_processed$log_revenue"

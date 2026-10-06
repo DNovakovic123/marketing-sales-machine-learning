@@ -1,7 +1,0 @@
-"0","ggplot(dataset_clean, aes(x = social_media_followers)) +"
-"0","  geom_histogram(bins = 30, fill = ""#9B59B6"", color = ""#2C3E50"", alpha = 0.8) +"
-"0","  theme_minimal() +"
-"0","  labs(title = ""Histogram: Pratioci na društvenim mrežama"", "
-"0","       x = ""Broj pratilaca"", "
-"0","       y = ""Frekvencija"") +"
-"0","  theme(plot.title = element_text(hjust = 0.5, face = ""bold""))"

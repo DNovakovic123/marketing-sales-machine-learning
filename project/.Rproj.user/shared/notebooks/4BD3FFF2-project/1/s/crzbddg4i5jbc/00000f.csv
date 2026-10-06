@@ -1,8 +1,0 @@
-"0","baseline_results_table = data.frame("
-"0","  Model = ""Baseline (Mean Prediction)"","
-"0","  R_squared = round(baseline_r2, 4),"
-"0","  MAE = round(baseline_mae, 4),"
-"0","  RMSE = round(baseline_rmse, 4)"
-"0",")"
-"0",""
-"0","knitr::kable(baseline_results_table, caption = ""Performanse referentnog (baseline) modela na test setu"")"

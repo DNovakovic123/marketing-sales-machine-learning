@@ -1,5 +1,0 @@
-"0","dataset_clean$price_advantage = ifelse("
-"0","  !is.na(dataset_clean$competitor_price_index), "
-"0","  100 - dataset_clean$competitor_price_index, "
-"0","  NA"
-"0",")"
