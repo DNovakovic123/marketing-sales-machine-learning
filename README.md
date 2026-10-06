@@ -151,7 +151,7 @@ install.packages(c(
 
 1. Klonirajte repozitorijum:
    ```bash
-   git clone https://github.com/lukaJevtic1/marketing-sales-machine-learning.git
+   git clone https://github.com/DNovakovic123/marketing-sales-machine-learning.git
    ```
 2. Otvorite `project/project.Rproj` u RStudiju. Radni direktorijum se tada automatski postavlja na folder `project`.
    *(Ako ne koristite RStudio projekat, postavite ga ručno: `setwd("putanja/do/marketing-sales-machine-learning/project")`.)*
