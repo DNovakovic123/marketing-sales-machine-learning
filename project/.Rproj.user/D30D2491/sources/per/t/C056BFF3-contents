@@ -65,8 +65,7 @@ head(dataset)
 ```{r}
 names(dataset)
 ```
-
-Funkcijom str možemo da proverimo kog su tipa naši feature-i i vidimo da ih imamo 23 od čega 4 numeričke (integer - int),9 decimalnih (numeric - num) i 6 karakternih (chr)
+Funkcijom str možemo da proverimo kog su tipa naši feature-i i vidimo da ih imamo 23 od čega 6 numeričke (integer - int),10 decimalnih (numeric - num) i 7 karakternih (chr)
 
 ```{r}
 str(dataset)
@@ -1347,7 +1346,6 @@ feature_selection_summary = data.frame(
 print(feature_selection_summary)
 
 ```
-
 Ovim smo uklonili rizik od nestabilnosti modela usled multikolinearnosti, a zadržali samo one feature koji donose jedinstvenu i korisnu informaciju za predikciju prihoda.
 
 ## 6.2 Statistička selekcija feature-a
@@ -1791,6 +1789,7 @@ baseline_results_table = data.frame(
 knitr::kable(baseline_results_table, caption = "Performanse referentnog (baseline) modela na test setu")
 ```
 Baseline model (R^2 približno 0, MAE = 0.554, RMSE = 0.6946) nema stvarnu prediktivnu moć i služi isključivo kao početna referenca, svaki napredniji model mora postići niže greške i pozitivan R^2
+
 ## 7.7 Linearna regresija
 
 Linearna regresija predstavlja osnovni model sa kojim ćemo uporediti naprednije algoritme mašinskog učenja.
@@ -2114,7 +2113,7 @@ gbm_m = calc_metrics(y_test, gbm_preds)
 ```
 
 ### 7.12 Konačno poređenje performansi svih modela
- 
+
 U završnoj fazi analize, sumiramo rezultate svih treniranih modela (od baznog modela, preko linearnih modela, stabla odlučivanja i slučajnih šuma, do Gradient Boosting-a) u jedinstvenu uporednu tabelu.
 
 ```{r}

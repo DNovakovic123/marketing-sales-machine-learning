@@ -1,1 +1,0 @@
-"0","dataset_clean$effective_discount = dataset_clean$discount_percentage * dataset_clean$num_promotions"

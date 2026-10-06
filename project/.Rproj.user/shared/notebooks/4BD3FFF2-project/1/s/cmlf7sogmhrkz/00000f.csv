@@ -1,6 +1,0 @@
-"0","baseline_rmse = sqrt(mean((actuals - baseline_preds)^2))"
-"0","print(paste(""Baseline RMSE:"", round(baseline_rmse, 4)))"
-"1","[1]"
-"1"," ""Baseline RMSE: 0.6946"""
-"1","
-"

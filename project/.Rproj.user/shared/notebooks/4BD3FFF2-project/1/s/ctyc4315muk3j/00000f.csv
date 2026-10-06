@@ -1,7 +1,0 @@
-"0","# Konfiguracija 5-fold CV kontrole"
-"0","train_control = trainControl("
-"0","  method = ""cv"","
-"0","  number = 5,"
-"0","  savePredictions = ""final"","
-"0","  verboseIter = FALSE"
-"0",")"

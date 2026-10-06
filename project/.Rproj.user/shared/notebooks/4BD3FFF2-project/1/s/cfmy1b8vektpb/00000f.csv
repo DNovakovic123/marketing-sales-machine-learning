@@ -1,2 +1,0 @@
-"0","dataset_clean$is_returning = ifelse(dataset_clean$customer_segment == ""Regular"" | dataset_clean$num_previous_purchases > 1, 1, 0)"
-"0",""
