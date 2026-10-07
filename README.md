@@ -172,19 +172,9 @@ Sa druge strane, **Linearna regresija i Lasso** ostvarile su $R^2 \approx 0.9014
 
 ```r
 install.packages(c(
-  "mice",
-  "tidyverse",
-  "knitr",
-  "lmtest",
-  "car",
-  "randomForest",
-  "glmnet",
-  "caret",
-  "rpart",
-  "rpart.plot",
-  "vip"
+  "mice", "tidyverse", "knitr", "lmtest", "car", "randomForest",
+  "glmnet", "caret", "rpart", "rpart.plot", "vip"
 ))
-
 ```
 
 ### Koraci
