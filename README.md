@@ -106,14 +106,12 @@ Metrike evaluacije na **Test skupu** (na logaritamskoj skali):
 
 ### Ključni uvidi:
 1. **Apsolutni pobednik:** **Gradient Boosting (GBM/XGBoost)** ubedljivo zauzima prvo mesto sa $R^2 = 0.9297$ i najnižim greškama ($\text{MAE} = 0.1458$, $\text{RMSE} = 0.1842$), čime je smanjio grešku predikcije za preko 14% u odnosu na linearni benchmark.
-2. **Snažan linearni signal:** Linearna regresija i Lasso postatvljaju odličan baseline sa $R^2 = 0.9014$, dok Random Forest ostvaruje $R^2 = 0.9039$.
+2. **Snažan linearni signal:** Linearna regresija i Lasso postavljaju odličan baseline sa $R^2 = 0.9014$, dok Random Forest ostvaruje $R^2 = 0.9039$.
 3. **Važnost varijabli:** Analiza permutacione važnosti i značajnosti atributa pokazala je da su ubedljivo najjači pokretači prihoda **`customer_segment`** (naročito Novi i VIP kupci), **`product_category`**, budžet (`log_budget`), kao i stopa konverzije (`conversion_rate`).
 
 ## Zaključak
 
-Ključni faktori koji utiču na prihod su **segment kupaca, kategorija proizvoda, istorija kupovina, stopa konverzije i sezonski trendovi**. Linearna regresija i Lasso pokazale su se kao optimalan izbor zbog ravnoteže između jednostavnosti i preciznosti.
-
-Moguća unapređenja: dodatno podešavanje hiperparametara i primena složenijih algoritama.
+Istraživanje je pokazalo da je prihod u poslovanju najsnažnije određen kategorijom kupaca, tipom proizvoda, budžetom i stopom konverzije. Napredne ansambl metode, prvenstveno Gradient Boosting (GBM), ostvarile su vrhunske performanse sa preko 92.9% objašnjene varijanse na neviđenom test skupu. S druge strane, Linearna i Lasso regresija ($R^2 \approx 0.9014$) nude odličnu alternativu za produkciju kada je primarna jednostavnost i interpretabilnost.
 
 ## Pokretanje projekta
 
