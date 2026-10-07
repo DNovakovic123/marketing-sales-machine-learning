@@ -111,7 +111,7 @@ Metrike evaluacije na **Test skupu** (na logaritamskoj skali):
 
 ## Zaključak
 
-Istraživanje je pokazalo da je prihod u poslovanju najsnažnije određen kategorijom kupaca, tipom proizvoda, budžetom i stopom konverzije. Napredne ansambl metode, prvenstveno Gradient Boosting (GBM), ostvarile su vrhunske performanse sa preko 92.9% objašnjene varijanse na neviđenom test skupu. S druge strane, Linearna i Lasso regresija ($R^2 \approx 0.9014$) nude odličnu alternativu za produkciju kada je primarna jednostavnost i interpretabilnost.
+Istraživanje je pokazalo da je prihod u poslovanju najsnažnije određen kategorijom kupaca, tipom proizvoda, budžetom i stopom konverzije. Napredne metode, prvenstveno Gradient Boosting (GBM), ostvarile su vrhunske performanse sa preko 92.9% objašnjene varijanse na neviđenom test skupu. S druge strane, Linearna i Lasso regresija (R^2 \approx 0.9014$) nude odličnu alternativu za produkciju kada je primarna jednostavnost i interpretabilnost.
 
 ## Pokretanje projekta
 
