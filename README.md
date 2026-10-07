@@ -195,13 +195,9 @@ install.packages(c(
 git clone https://github.com/DNovakovic123/marketing-sales-machine-learning.git
 ```
 
-2. Otvorite `project/project.Rproj` u RStudiju.
-
-   Otvaranjem RStudio projekta radni direktorijum se automatski postavlja na folder `project`.
-
-3. Otvorite `project.Rmd` i pokrenite ga pomoću opcije **Knit**, ili izvršavajte blokove koda redom.
-
-4. Skup podataka `marketing_sales_dataset.csv` nalazi se u istom folderu kao i R Markdown dokument.
+2. Otvorite `project/project.Rproj` u RStudiju. Radni direktorijum se tada automatski postavlja na folder `project`.
+   *(Ako ne koristite RStudio projekat, postavite ga ručno: `setwd("putanja/do/marketing-sales-machine-learning/project")`.)*
+3. Otvorite `project.Rmd` i pokrenite ga (**Knit**), ili izvršavajte blokove koda redom. Skup podataka (`marketing_sales_dataset.csv`) učitava se iz istog foldera.
 
 > Rezultati su reproduktivni jer su korišćeni fiksni seed-ovi (`123` i `42`).
 
