@@ -1440,7 +1440,7 @@ comparison_summary = data.frame(
 )
 print(comparison_summary)
 ```
-Poređenje modela ukazuje na odličan kompromis: Full Model sa 137 feature-a postiže R^2_adj = 0.943, ali je preopterećen multikolinearnošću i prevelikom kompleksnošću. Sa druge strane, Selected Model sa svega 22 feature-a  zadržava visok R^2_adj = 0.902 (objašnjava preko 90% varijanse), pri čemu su uspešno sačuvani ključni budžetski prediktori. Blagi pad objašnjene varijanse od oko 4% predstavlja minimalnu cenu za drastično smanjenje kompleksnosti, potpunu eliminaciju multikolinearnosti i dobijanje stabilnog i interpretabilnog modela.
+Poređenje modela ukazuje na odličan kompromis: Full Model sa 46 feature-a postiže R^2_adj = 0.943, ali je preopterećen multikolinearnošću i prevelikom kompleksnošću. Sa druge strane, Selected Model sa svega 22 feature-a  zadržava visok R^2_adj = 0.902 (objašnjava preko 90% varijanse), pri čemu su uspešno sačuvani ključni budžetski prediktori. Blagi pad objašnjene varijanse od oko 4% predstavlja minimalnu cenu za drastično smanjenje kompleksnosti, potpunu eliminaciju multikolinearnosti i dobijanje stabilnog i interpretabilnog modela.
 
 ## 6.3 Model-based selekcija feature-a
 
