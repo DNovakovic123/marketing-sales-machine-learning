@@ -3,6 +3,7 @@
 Seminarski rad iz mašinskog učenja u programskom jeziku **R**. Cilj projekta je sveobuhvatna analiza faktora koji utiču na ostvareni prihod od prodaje (`sales_revenue_usd`) i razvoj regresionih modela koji predviđaju prihod na osnovu marketinških ulaganja, kanala prodaje i ponašanja kupaca.
 
 **Autor:** Danilo Novaković (101/2018)
+
 **Fakultet:** Prirodno-matematički fakultet, Univerzitet u Kragujevcu
 
 
