@@ -155,13 +155,6 @@ Metrike na **test skupu**:
 
 4. **Važnost varijabli:** Random Forest importance i permutaciona važnost (obe računate nad Random Forest modelom, a ne nad GBM-om) slažu se da dominiraju **`customer_segment`**, **`product_category`**, **`log_budget`** i **`total_ad_spend`**. Permutacija `customer_segment` povećava RMSE za više od 0.35. Ovo su statističke povezanosti, a ne dokaz uzročnosti.
 
-## Ograničenja
-
-- **Sintetički skup:** pravilnost podataka sugeriše da nisu realni, pa je primenljivost rezultata na stvarno poslovanje ograničena.
-- **Selekcija nad celim skupom:** imputacija i selekcija prediktora (VIF, korelacije, η², Random Forest, Lasso) rađene su nad svih 60.000 redova, uključujući ciljnu promenljivu. Obuka i podešavanje modela rađeni su samo na trening skupu, ali test skup nije potpuno nezavisan od izbora obeležja, pa su test metrike blago optimistične.
-- **Skromno podešavanje hiperparametara:** mali gridovi (npr. `mtry` ∈ {2, 4}, `interaction.depth` ∈ {3, 5}), a najbolje vrednosti se nalaze na ivicama gridova. Poređenje Random Forest-a, stabla i GBM-a treba tumačiti oprezno.
-- **Metrike na log skali:** RMSE od 0.18 odgovara relativnoj grešci od oko 18–20% u dolarima.
-
 
 ## Zaključak
 
