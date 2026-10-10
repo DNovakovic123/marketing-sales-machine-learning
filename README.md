@@ -137,24 +137,23 @@ Metrike na **test skupu**:
 
 | Model | R² | MAE | RMSE |
 | :--- | :---: | :---: | :---: |
-| **Gradient Boosting (GBM)** | **0.9297** | **0.1458** | **0.1842** |
-| Random Forest | 0.9039 | 0.1715 | 0.2153 |
-| Linear Regression | 0.9014 | 0.1710 | 0.2181 |
-| Lasso Regression | 0.9014 | 0.1711 | 0.2181 |
+| **Gradient Boosting (GBM)** | **0.9302** | **0.1453** | **0.1835** |
+| Random Forest | 0.9016 | 0.1737 | 0.2179 |
+| Linear Regression | 0.9014 | 0.1709 | 0.2181 |
+| Lasso Regression | 0.9014 | 0.1710 | 0.2181 |
 | Ridge Regression | 0.8933 | 0.1788 | 0.2269 |
-| Decision Tree (CART) | 0.8714 | 0.1997 | 0.2491 |
+| Decision Tree (CART) | 0.8714 | 0.1996 | 0.2491 |
 | Baseline (srednja vrednost) | -0.0002 | 0.5540 | 0.6946 |
 
 ### Ključni uvidi
 
-1. **Najbolji model:** Gradient Boosting ostvario je R² = 0.9297, MAE = 0.1458 i RMSE = 0.1842. Prosečna greška (bias) na test skupu je zanemarljiva (≈ -0.0006), a najveća apsolutna greška iznosi 0.7485.
+1. **Najbolji model:** Gradient Boosting ostvario je R² = 0.9302, MAE = 0.1453 i RMSE = 0.1835. Prosečna greška (bias) na test skupu je zanemarljiva (≈ -0.0013), a najveća apsolutna greška iznosi 0.7105.
 
-2. **Poređenje sa ostalim modelima:** u odnosu na linearnu regresiju GBM smanjuje RMSE sa 0.2181 na 0.1842 (≈ **15.5%**), a u odnosu na Random Forest sa 0.2153 (≈ **14.4%**).
+2. **Poređenje sa ostalim modelima:** u odnosu na linearnu regresiju GBM smanjuje RMSE sa 0.2181 na 0.1835 (≈ **15.9%**), a u odnosu na Random Forest sa 0.2179 (≈ **15.8%**).
 
-3. **Linearni signal je jak, ali ne i jedini:** linearni modeli objašnjavaju oko 90% varijanse, dok GBM dodaje još oko 2.8 procentnih poena, što ukazuje na nelinearne efekte i interakcije. Random Forest je tek neznatno bolji od linearne regresije po R² i RMSE (a po MAE nije), što može biti posledica skromnog podešavanja hiperparametara.
+3. **Linearni signal je jak, ali ne i jedini:** linearni modeli objašnjavaju oko 90% varijanse, dok GBM dodaje još oko 2.9 procentnih poena, što ukazuje na nelinearne efekte i interakcije. Random Forest je tek neznatno bolji od linearne regresije po R² i RMSE (a po MAE nije), što može biti posledica skromnog podešavanja hiperparametara.
 
 4. **Važnost varijabli:** Random Forest importance i permutaciona važnost (obe računate nad Random Forest modelom, a ne nad GBM-om) slažu se da dominiraju **`customer_segment`**, **`product_category`**, **`log_budget`** i **`total_ad_spend`**. Permutacija `customer_segment` povećava RMSE za više od 0.35. Ovo su statističke povezanosti, a ne dokaz uzročnosti.
-
 
 ## Ograničenja
 
@@ -168,7 +167,7 @@ Metrike na **test skupu**:
 
 Prihod od prodaje je u ovom skupu najjače povezan sa segmentom kupaca, kategorijom proizvoda i obimom marketinških ulaganja, uz izražen sezonski efekat u četvrtom kvartalu.
 
-Kompletan proces (imputacija, inženjering obeležja, selekcija prediktora i poređenje više regresionih modela) doveo je do modela koji dobro predviđaju prihod na ovom skupu. Najbolje performanse ostvario je **Gradient Boosting** sa R² = 0.9297 i RMSE = 0.1842 (na logaritamskoj skali, što otprilike odgovara relativnoj grešci od 18–20% u originalnim jedinicama).
+Kompletan proces (imputacija, inženjering obeležja, selekcija prediktora i poređenje više regresionih modela) doveo je do modela koji dobro predviđaju prihod na ovom skupu. Najbolje performanse ostvario je **Gradient Boosting** sa R² = 0.9302 i RMSE = 0.1835 (na logaritamskoj skali, što otprilike odgovara relativnoj grešci od 18–20% u originalnim jedinicama).
 
 **Linearna regresija i Lasso** (R² ≈ 0.9014) ostaju dobre alternative kada su jednostavnost i interpretabilnost važniji od maksimalne preciznosti.
 
